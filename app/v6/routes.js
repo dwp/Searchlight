@@ -172,6 +172,7 @@ var applyForNinoRoutes = require('./router/apply-for-a-nino_routes');
 var applyForNinoRoutes1 = require('./router/apply-for-a-nino_routes_1');
 var applyForNinoRoutesGnc = require('./router/apply-for-a-nino_routes_gnc');
 var applyForNinoRoutesP3Gnc = require('./router/apply-for-a-nino_routes_p3_gnc');
+var applyForNinoRoutesForce = require('./router/apply-for-a-nino_routes_force');
 
 
 // Import routes
@@ -195,7 +196,8 @@ router.use('/', main,
                 applyForNinoRoutes,
                 applyForNinoRoutes1,
                 applyForNinoRoutesGnc,
-                applyForNinoRoutesP3Gnc);
+                applyForNinoRoutesP3Gnc,
+                applyForNinoRoutesForce);
 
   // Route index page
   router.get('/', function (req, res) {
